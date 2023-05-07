@@ -71,7 +71,7 @@ export default {
   position: absolute;
   text-align: right;
   align-items: flex-end;
-  top: 8vw;
+  top: 9vw;
   right: 29vw;
   font-size: 1.7vw;
 }
