@@ -8,7 +8,7 @@ body {
   height: 100%;
   overflow-y: auto;
   margin: 0;
-  background-color: #cbf2ff;
+  background-color: var(--color-soil);
 
   -webkit-font-smoothing: subpixel-antialiased;
 }
