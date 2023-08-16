@@ -1,7 +1,5 @@
 <template>
   <div class="app-container">
-    <img src="/assets/img/blobs/blue-blobs.svg" class="blue-blobs" />
-    <img src="/assets/img/blobs/white-blobs.svg" class="white-blobs" />
     <AppHeader />
     <PastEventsGrid />
     <AppFooter />
@@ -27,11 +25,11 @@ export default {
         },
         {
           property: 'og:title',
-          content: 'Bitcamp 2023',
+          content: 'Bitcamp 2024',
         },
         {
           property: 'og:site_name',
-          content: 'Bitcamp 2023',
+          content: 'Bitcamp 2024',
         },
         {
           property: 'og:url',
@@ -56,7 +54,7 @@ export default {
         },
         {
           property: 'twitter:title',
-          content: 'Bitcamp 2023',
+          content: 'Bitcamp 2024',
         },
         {
           property: 'twitter:description',
@@ -119,36 +117,4 @@ export default {
   background-repeat: no-repeat;
 }
 
-@keyframes water-ripple {
-  0%,
-  100% {
-    transform: translateX(2vw);
-  }
-
-  50% {
-    transform: translateX(-2vw);
-  }
-}
-
-img.white-blobs {
-  /* Set rules to fill background */
-
-  /* Set up proportionate scaling */
-  width: 110%;
-  position: fixed;
-  left: -2vw;
-  animation: water-ripple 10s ease infinite reverse;
-}
-
-img.blue-blobs {
-  /* Set rules to fill background */
-
-  /* Set up proportionate scaling */
-  width: 110%;
-  left: -2vw;
-  /* Set up positioning */
-  top: 0;
-  position: fixed;
-  animation: water-ripple 10s ease infinite;
-}
 </style>

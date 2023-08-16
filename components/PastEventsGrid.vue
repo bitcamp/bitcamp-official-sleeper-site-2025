@@ -1,24 +1,11 @@
 <template>
   <div class="section-container">
-    <div class="bb-rotate-div">
-      <div class="bob-div">
-        <img class="bb-floatie" src="/assets/img/floaties/bb-floatie.svg" />
-        <h1 class="bb-floatie-text">Explore Our Past Events</h1>
-      </div>
-    </div>
     <div class="past-grid-container">
       <div class="past-grid">
+        <EventCard :year="''" :theme="'Explore Our Past Events'" />
         <template v-for="year in years" :key="year">
           <EventCard :year="year" :theme="themes[year]" />
         </template>
-      </div>
-    </div>
-    <div class="circle-rotate-div">
-      <div class="bob-div">
-        <img
-          class="circle-floatie"
-          src="/assets/img/floaties/circle-floatie.svg"
-        />
       </div>
     </div>
   </div>
@@ -31,8 +18,9 @@ export default {
   components: { EventCard },
   data() {
     return {
-      years: [2022, 2021, 2019, 2018, 2017, 2016, 2015, 2014] as const,
+      years: [2023, 2022, 2021, 2019, 2018, 2017, 2016, 2015, 2014] as const,
       themes: {
+        2023: 'Find Your Frontier',
         2022: 'Adventure Awaits',
         2021: 'Explore Together',
         2019: 'Build With Purpose',

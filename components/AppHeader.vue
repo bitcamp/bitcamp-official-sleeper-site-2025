@@ -1,28 +1,13 @@
 <template>
-  <div class="rotating-div">
-    <div class="header-container">
-      <img
-        class="header-floatie"
-        src="/assets/img/floaties/header-floatie.svg"
-      />
-      <div class="header-content">
-        <img
-          class="green-marshie"
-          src="/assets/img/floaties/green-marshie.png"
-        />
-        <h1 class="header-title">shh... we’re on vacation :)</h1>
-        <div class="header-body">
-          <p>Bitcamp will return in 2023!</p>
-          <p>In the meantime, apply to join us as an organizer.</p>
-          <div class="button-container">
-            <LinkButton
-              text="Apply Now!"
-              link="https://forms.gle/o8ReRB6vfvJBRtRx7"
-            />
-          </div>
-        </div>
-        <SocialIcons />
+  <div class="header-container">
+    <img src="../public/bitcamp-brand/logos/wordmark.png" alt="Bitcamp" />
+    <div class="header-content">
+      <h1 class="header-title">We're out exploring, but we'll be back soon!</h1>
+      <div class="header-body">
+        <p>Bitcamp returns in 2024 for our 10-year anniversary!</p>
+        <p>In the meantime, follow our socials for updates.</p>
       </div>
+      <SocialIcons />
     </div>
   </div>
 </template>
@@ -37,47 +22,20 @@ export default {
 </script>
 
 <style scoped>
-@keyframes header-rotate {
-  0%,
-  100% {
-    transform: rotate(17deg);
-  }
-
-  50% {
-    transform: rotate(14deg);
-  }
-}
-
-.rotating-div {
-  animation: header-rotate 10s ease infinite reverse;
-}
-
 .header-container {
   position: relative;
-  animation: floatie-bob 6s ease infinite reverse;
-}
-
-.header-floatie {
-  width: 100vw;
-  margin-left: -15vw;
-  margin-top: -10vw;
 }
 
 .header-content {
   display: flex;
   flex-direction: column;
   gap: 2vw;
-
-  position: absolute;
-  text-align: right;
-  align-items: flex-end;
-  top: 9vw;
-  right: 29vw;
   font-size: 1.7vw;
 }
 
 .header-title {
-  width: 20vw; /* two lines */
+  width: 20vw;
+  /* two lines */
   line-height: 1.3;
   font-size: 2.8vw;
 }
@@ -85,7 +43,6 @@ export default {
 .header-body {
   display: flex;
   flex-flow: column nowrap;
-  align-items: flex-end;
   width: 40vw;
 }
 
@@ -93,23 +50,8 @@ export default {
   margin-top: 0.5vw;
 }
 
-.green-marshie {
-  position: absolute;
-  align-self: flex-start;
-  transform: rotate(-17deg);
-  width: 30vw;
-  margin-top: -5vw;
-  margin-left: -30vw;
-}
-
 /* mobile view - header size */
 @media (max-width: 768px) {
-  .header-floatie {
-    width: 140vw;
-    margin-left: -45vw;
-    margin-top: -10vw;
-  }
-
   .header-content {
     gap: 3vw;
     top: 15vw;
@@ -118,7 +60,8 @@ export default {
   }
 
   .header-title {
-    width: auto; /* one line */
+    width: auto;
+    /* one line */
     font-size: 5vw;
     line-height: 1;
   }
@@ -126,12 +69,6 @@ export default {
   .header-body {
     width: 45vw;
     line-height: 1.3;
-  }
-
-  .green-marshie {
-    width: 40vw;
-    margin-top: -4vw;
-    margin-left: -28vw;
   }
 }
 </style>
