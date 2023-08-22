@@ -23,16 +23,15 @@ export default {
 
 <style>
 .social-icon {
-  width: 3.5vw;
-  height: 3.5vw;
+  width: 1.5vw;
+  height: 1.5vw;
   padding: 0.5vw;
   transition: padding 0.2s, width 0.2s, height 0.2s;
 }
 
 .social-icon:hover {
-  width: 4.5vw;
-  height: 4.5vw;
-  padding: 0vw;
+  width: 2vw;
+  height: 2vw; 
   transition: padding 0.2s, width 0.2s, height 0.2s;
 }
 

@@ -1,6 +1,6 @@
 <template>
   <div class="header-container">
-    <img src="../public/bitcamp-brand/logos/wordmark.png" alt="Bitcamp" />
+    <img src="../public/bitcamp-brand/logos/wordmark.png" width="200" alt="Bitcamp" />
     <div class="header-content">
       <h1 class="header-title">We're out exploring, but we'll be back soon!</h1>
       <div class="header-body">
@@ -24,26 +24,36 @@ export default {
 <style scoped>
 .header-container {
   position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 500px;
+  padding-top: 50px;
+  gap: 25px;
+  text-align: center;
 }
 
 .header-content {
   display: flex;
   flex-direction: column;
-  gap: 2vw;
+  align-items: center;
+  gap: 1vw;
   font-size: 1.7vw;
+  margin-top: 100px;
 }
 
 .header-title {
-  width: 20vw;
+  width: 50%;
   /* two lines */
   line-height: 1.3;
-  font-size: 2.8vw;
+  font-size: 3rem;
 }
 
 .header-body {
-  display: flex;
-  flex-flow: column nowrap;
+  /* display: flex; */
+  /* flex-flow: column nowrap; */
   width: 40vw;
+  font-size: 1.5rem;
 }
 
 .button-container {
