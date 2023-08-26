@@ -1,10 +1,7 @@
 <template>
-  <div
-    class="event"
-    :style="{
+  <div v-if="year" class="event" :style="{
       backgroundImage: `url('/img/thumbnails/${year}-thumb.jpg')`,
-    }"
-  >
+    }">
     <a :href="`https://${year}.bit.camp`">
       <div class="filler">
         <div class="event-text">
@@ -14,6 +11,11 @@
       </div>
     </a>
   </div>
+  <div v-else class="event">
+    <div class="event-text-only">
+      <div class="event-theme">{{ text }}</div>
+    </div>
+  </div>
 </template>
 
 <script lang="ts">
@@ -22,12 +24,16 @@ export default {
   props: {
     year: {
       type: Number,
-      required: true,
+      required: false,
     },
     theme: {
       type: String,
       required: true,
     },
+    text: {
+      type: String,
+      required: false,
+    }
   },
 };
 </script>
@@ -53,8 +59,17 @@ export default {
 .event-text {
   position: absolute;
   bottom: 0;
-
   padding: 0px 0px 40px 40px;
+}
+
+.event-text-only {
+  position: absolute;
+  bottom: 0;
+  padding: 0px 60px 0 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .event-text h3 {
@@ -77,7 +92,8 @@ export default {
 }
 
 .filler:hover {
-  background: rgba(203, 242, 255, 0.3); /* #cbf2ff with 0.3 opacity */
+  background: rgba(203, 242, 255, 0.3);
+  /* #cbf2ff with 0.3 opacity */
   transition: 0.4s;
 }
 

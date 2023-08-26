@@ -2,7 +2,7 @@
   <div class="section-container">
     <div class="past-grid-container">
       <div class="past-grid">
-        <EventCard :year="''" :theme="'Explore Our Past Events'" />
+        <EventCard text="Explore Our Past Events" />
         <template v-for="year in years" :key="year">
           <EventCard :year="year" :theme="themes[year]" />
         </template>
