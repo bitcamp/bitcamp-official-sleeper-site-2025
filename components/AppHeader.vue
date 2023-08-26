@@ -1,6 +1,6 @@
 <template>
   <div class="header-container">
-    <img src="../public/bitcamp-brand/logos/wordmark.png" width="200" alt="Bitcamp" />
+    <img src="../public/bitcamp-brand/logos/wordmark-brown.png" width="200" alt="Bitcamp" />
     <div class="header-content">
       <h1 class="header-title">We're out exploring, but we'll be back soon!</h1>
       <div class="header-body">
@@ -27,10 +27,12 @@ export default {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 500px;
+  padding-bottom: 300px;
+  margin-bottom: 300px;
   padding-top: 50px;
   gap: 25px;
   text-align: center;
+  background-color: var(--color-sky);
 }
 
 .header-content {
@@ -67,6 +69,8 @@ export default {
     top: 15vw;
     right: 22vw;
     font-size: 3vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
   }
 
   .header-title {
