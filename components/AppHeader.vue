@@ -1,7 +1,7 @@
 <template>
   <div class="header-container">
     <a class="logo" href="/">
-      <img src="~/public/bitcamp-brand/logos/wordmark-brown.png" width="300" alt="Bitcamp" />
+      <img src="~/public/bitcamp-brand/logos/wordmark-brown.svg" width="300" alt="Bitcamp" />
     </a>
     <div class="cloud">
       <img id="small-cloud-left" src="../assets/img/images/small-cloud.svg" />
