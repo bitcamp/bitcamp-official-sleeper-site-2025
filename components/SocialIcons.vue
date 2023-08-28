@@ -48,6 +48,7 @@ export default {
 @media (max-width: 768px) {
   .social-icon {
     width: 8vw;
+    padding: 1vw;
   }
 }
 </style>
