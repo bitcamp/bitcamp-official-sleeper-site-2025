@@ -38,7 +38,6 @@ export default {
 <style scoped>
 .section-container {
   position: relative;
-  margin-top: -10vw;
 }
 
 .past-grid-container {
