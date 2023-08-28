@@ -41,34 +41,52 @@ export default {
 
 #small-cloud-left {
   position: absolute;
-  top: 15%;
+  top: 21%;
   left: 8%;
   z-index: 0;
   width: 100px;
+  animation: left-clouds 24s linear infinite;
 }
 
 #big-cloud-left {
   position: absolute;
-  top: 22%;
+  top: 24%;
   left: 1%;
   z-index: 0;
   width: 150px;
+  animation: left-clouds 32s linear infinite;
 }
 
 #small-cloud-right {
   position: absolute;
-  top: 60%;
+  top: 50%;
   right: 3%;
   z-index: 0;
   width: 100px;
+  animation: right-clouds 28s linear infinite;
 }
 
 #big-cloud-right {
   position: absolute;
-  top: 67%;
+  top: 53%;
   right: 7%;
   z-index: 0;
   width: 150px;
+  animation: right-clouds 22s linear infinite;
+}
+		
+@keyframes left-clouds {	
+  100% {	
+    left: calc(100%);	
+  }	
+}	
+@keyframes right-clouds {	
+  0% {	
+    right: 0;	
+  }	
+  100% {	
+    right: 100vw;	
+  }	
 }
 
 .header-container {
@@ -97,7 +115,7 @@ export default {
   width: 65%;
   /* two lines */
   line-height: 1.3;
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 .header-body {
@@ -169,19 +187,21 @@ export default {
 
   #small-cloud-left {
     width: 75px;
+    top: 25%;
   }
 
   #big-cloud-left {
-    top: 20%;
     width: 112px;
+    top: 30%;
   }
 
   #big-cloud-right {
-    top: 65%;
+    top: 75%;
     width: 112px;
   }
 
   #small-cloud-right {
+    top: 70%;
     right: 5%;
     width: 75px;
   }
