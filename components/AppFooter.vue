@@ -25,7 +25,7 @@ footer {
   position: relative;
   box-sizing: border-box;
 
-  height: 30vw;
+  height: 25vw;
   width: 100vw;
   overflow: hidden;
 }
