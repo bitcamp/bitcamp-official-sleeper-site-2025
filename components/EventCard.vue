@@ -3,7 +3,7 @@
       backgroundImage: `url('/img/thumbnails/${year}-thumb.jpg')`,
     }">
     <div v-if="year === 2014">
-      <img class="binoculars" src="../assets/img/images/binoculars.svg" alt="Overlay Image" />
+      <img class="binoculars" src="../assets/img/images/binoculars.svg"/>
     </div>
     <a :href="`https://${year}.bit.camp`">
       <div class="filler">
