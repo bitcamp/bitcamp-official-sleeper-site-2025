@@ -119,7 +119,7 @@ export default {
 .header-body {
   /* display: flex; */
   /* flex-flow: column nowrap; */
-  width: 40vw;
+  width: 45vw;
   font-size: 2.5rem;
 }
 
