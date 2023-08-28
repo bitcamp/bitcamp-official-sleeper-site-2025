@@ -1,8 +1,6 @@
 <template>
   <div class="header-container">
-    <a class="logo" href="/">
-      <img src="~/public/bitcamp-brand/logos/wordmark-brown.svg" width="300" alt="Bitcamp" />
-    </a>
+    <img src="~/public/bitcamp-brand/logos/wordmark-brown.svg" width="300" alt="Bitcamp" />
     <div class="cloud">
       <img id="small-cloud-left" src="../assets/img/images/small-cloud.svg" />
       <img id="big-cloud-left" src="../assets/img/images/big-cloud.svg" />
