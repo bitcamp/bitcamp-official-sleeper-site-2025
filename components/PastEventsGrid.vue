@@ -2,7 +2,7 @@
   <div class="section-container">
     <div class="past-grid-container">
       <div class="past-grid">
-        <EventCard text="Explore Our Past Events" />
+        <EventCard id="cowboy-icon" text="Explore Our Past Events" />
         <template v-for="year in years" :key="year">
           <EventCard :year="year" :theme="themes[year]" />
         </template>
@@ -36,6 +36,12 @@ export default {
 </script>
 
 <style scoped>
+#cowboy-icon {
+  background-image: url('../assets/img/images/cowboy-hat.svg');
+  background-repeat: no-repeat;
+  background-size: 50% 50% !important;
+}
+
 .section-container {
   position: relative;
 }
@@ -52,9 +58,11 @@ export default {
   justify-content: center;
   flex-wrap: wrap;
   max-width: 100rem;
+  padding: 0 3rem 0 3rem;
 }
 
 @keyframes bb-rotate {
+
   0%,
   100% {
     transform: rotate(-5deg);
@@ -66,6 +74,7 @@ export default {
 }
 
 @keyframes circle-rotate {
+
   0%,
   100% {
     transform: rotate(-2deg);

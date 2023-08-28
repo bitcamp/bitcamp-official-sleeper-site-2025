@@ -3,6 +3,10 @@
     <a class="logo" href="/">
       <img src="~/public/bitcamp-brand/logos/wordmark-brown.png" width="300" alt="Bitcamp" />
     </a>
+    <img id="small-cloud-left" src="../assets/img/images/small-cloud.svg" />
+    <img id="big-cloud-left" src="../assets/img/images/big-cloud.svg" />
+    <img id="small-cloud-right" src="../assets/img/images/small-cloud.svg" />
+    <img id="big-cloud-right" src="../assets/img/images/big-cloud.svg" />
     <div class="header-content">
       <h1 class="header-title">We're out exploring, but we'll be back soon!</h1>
       <div class="header-body">
@@ -32,6 +36,39 @@ export default {
 </script>
 
 <style scoped>
+
+#small-cloud-left {
+  position: absolute;
+  top: 15%;
+  left: 8%;
+  z-index: 0;
+  width: 100px;
+}
+
+#big-cloud-left {
+  position: absolute;
+  top: 22%;
+  left: 1%;
+  z-index: 0;
+  width: 150px;
+}
+
+#small-cloud-right {
+  position: absolute;
+  top: 60%;
+  right: 3%;
+  z-index: 0;
+  width: 100px;
+}
+
+#big-cloud-right {
+  position: absolute;
+  top: 67%;
+  right: 7%;
+  z-index: 0;
+  width: 150px;
+}
+
 .header-container {
   position: relative;
   display: flex;
@@ -124,6 +161,25 @@ export default {
   .header-body {
     width: 85vw;
     line-height: 1.3;
+  }
+
+  #small-cloud-left {
+    width: 75px;
+  }
+
+  #big-cloud-left {
+    top: 20%;
+    width: 112px;
+  }
+
+  #big-cloud-right {
+    top: 65%;
+    width: 112px;
+  }
+
+  #small-cloud-right {
+    right: 5%;
+    width: 75px;
   }
 }
 </style>
