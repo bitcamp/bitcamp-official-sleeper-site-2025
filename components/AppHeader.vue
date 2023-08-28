@@ -3,10 +3,12 @@
     <a class="logo" href="/">
       <img src="~/public/bitcamp-brand/logos/wordmark-brown.png" width="300" alt="Bitcamp" />
     </a>
-    <img id="small-cloud-left" src="../assets/img/images/small-cloud.svg" />
-    <img id="big-cloud-left" src="../assets/img/images/big-cloud.svg" />
-    <img id="small-cloud-right" src="../assets/img/images/small-cloud.svg" />
-    <img id="big-cloud-right" src="../assets/img/images/big-cloud.svg" />
+    <div class="cloud">
+      <img id="small-cloud-left" src="../assets/img/images/small-cloud.svg" />
+      <img id="big-cloud-left" src="../assets/img/images/big-cloud.svg" />
+      <img id="small-cloud-right" src="../assets/img/images/small-cloud.svg" />
+      <img id="big-cloud-right" src="../assets/img/images/big-cloud.svg" />
+    </div>
     <div class="header-content">
       <h1 class="header-title">We're out exploring, but we'll be back soon!</h1>
       <div class="header-body">
@@ -156,11 +158,13 @@ export default {
     width: auto;
     /* one line */
     line-height: 1;
+    z-index: 5;
   }
 
   .header-body {
     width: 85vw;
     line-height: 1.3;
+    z-index: 5;
   }
 
   #small-cloud-left {
