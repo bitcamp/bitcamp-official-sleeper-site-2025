@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="social-icon-container">
     <a href="https://www.instagram.com/bitcamp">
       <img src="/assets/img/icons/instagram.svg" class="social-icon" />
     </a>
@@ -22,17 +22,21 @@ export default {
 </script>
 
 <style>
+
+.social-icon-container {
+  display: flex;
+  z-index: 10;
+  
+}
 .social-icon {
-  width: 1.5vw;
-  height: 1.5vw;
-  padding: 0.5vw;
-  transition: padding 0.2s, width 0.2s, height 0.2s;
+  width: 3vw;
+  display: inline-block;
+  padding: 0.75vw;
+  transition: transform 0.3s;
 }
 
 .social-icon:hover {
-  width: 2vw;
-  height: 2vw; 
-  transition: padding 0.2s, width 0.2s, height 0.2s;
+  transform: scale(1.4);
 }
 
 .tiktok-icon {
@@ -43,13 +47,7 @@ export default {
 /* mobile view - icon size */
 @media (max-width: 768px) {
   .social-icon {
-    width: 5vw;
-    height: 5vw;
-  }
-
-  .social-icon:hover {
-    width: 6vw;
-    height: 6vw;
+    width: 8vw;
   }
 }
 </style>
