@@ -16,7 +16,7 @@
   </div>
   <div v-else class="event">
     <div class="event-text-only">
-      <div class="event-theme event-text-spacing">{{ text }}</div>
+      <div class="event-theme event-text-spacing"><pre>{{ text }}</pre></div>
     </div>
   </div>
 </template>
@@ -66,8 +66,6 @@ export default {
 }
 
 .event-text-only {
-  position: absolute;
-  bottom: 0;
   margin: 0px 60px 0 60px;
   display: flex;
   justify-content: center;
@@ -76,7 +74,7 @@ export default {
 }
 
 .event-text-spacing {
-  padding: 0px 0px 10px 50px;
+  text-align: center;
 }
 
 .binoculars {
