@@ -19,7 +19,6 @@
     <div class="graphics">
       <img class="mountains" src="~/assets/img/images/mountains.svg" alt="mountains">
       <img class="sun" src="~/assets/img/images/sun.svg">
-
       <img class="cowskull" src="~/assets/img/images/cowskull.svg">
       <img class="cactus" src="~/assets/img/images/cactus.svg">
     </div>
@@ -92,10 +91,10 @@ export default {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding-bottom: 32vw;
+  padding-bottom: 26vw;
   margin-bottom: 10vw;
   padding-top: 100px;
-  gap: 25px;
+  gap: 12px;
   text-align: center;
   background-color: var(--color-sky);
 }
@@ -106,7 +105,8 @@ export default {
   align-items: center;
   gap: 3vw;
   font-size: 1.7vw;
-  margin-top: 100px;
+  margin-top: 0px;
+  z-index: 5;
 }
 
 .header-title {
@@ -143,6 +143,18 @@ export default {
   width: 13.5vw;
   z-index: 1;
   transform: translate(200%, -100%); 
+  animation: rise 3s linear forwards;
+}
+
+@keyframes rise {
+  0% {
+    bottom: -15vw; /* Start position, below the horizon */
+    filter: brightness(0.4);
+  }
+  100% {
+    bottom: 1.5vw; /* End position, halfway up the viewport */
+    filter: brightness(1);
+  }
 }
 
 .cowskull {
@@ -174,7 +186,6 @@ export default {
     width: auto;
     /* one line */
     line-height: 1;
-    z-index: 5;
   }
 
   .header-body {
