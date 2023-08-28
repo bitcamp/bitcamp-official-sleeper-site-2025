@@ -40,6 +40,13 @@ footer {
   left: 0;
   right: 0;
   bottom: 5vw;
+  font-size: 1.5vw;
+}
+
+@media (max-width: 976px) {
+  .floatie-text {
+    font-size: 2vw;
+  }
 }
 
 @media (max-width: 768px) {
