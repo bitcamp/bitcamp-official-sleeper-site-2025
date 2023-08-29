@@ -58,7 +58,7 @@ export default {
   position: absolute;
   top: 50%;
   right: 3%;
-  z-index: 0;
+  z-index: 2;
   width: 100px;
   animation: right-clouds 28s linear infinite;
 }
@@ -67,7 +67,7 @@ export default {
   position: absolute;
   top: 53%;
   right: 7%;
-  z-index: 0;
+  z-index: 2;
   width: 150px;
   animation: right-clouds 22s linear infinite;
 }
@@ -149,11 +149,13 @@ export default {
 @keyframes rise {
   0% {
     bottom: -15vw; /* Start position, below the horizon */
-    filter: brightness(0.4);
+    /* filter: brightness(0.4); */
   }
   100% {
     bottom: 1.5vw; /* End position, halfway up the viewport */
-    filter: brightness(1);
+    /* filter: brightness(1);
+     */
+    filter: hue-rotate(50deg) brightness(176.7%) saturate(60.7%);
   }
 }
 
