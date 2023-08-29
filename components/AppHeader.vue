@@ -56,7 +56,7 @@ export default {
 
 #small-cloud-right {
   position: absolute;
-  top: 50%;
+  top: 62%;
   right: 3%;
   z-index: 2;
   width: 100px;
@@ -65,7 +65,7 @@ export default {
 
 #big-cloud-right {
   position: absolute;
-  top: 53%;
+  top: 66%;
   right: 7%;
   z-index: 2;
   width: 150px;
@@ -143,7 +143,7 @@ export default {
   width: 13.5vw;
   z-index: 1;
   transform: translate(200%, -100%); 
-  animation: rise 3s linear forwards;
+  animation: rise 3.5s linear forwards;
 }
 
 @keyframes rise {
@@ -152,7 +152,7 @@ export default {
     /* filter: brightness(0.4); */
   }
   100% {
-    bottom: 1.5vw; /* End position, halfway up the viewport */
+    bottom: -3vw; /* End position, halfway up the viewport */
     /* filter: brightness(1);
      */
     filter: hue-rotate(50deg) brightness(176.7%) saturate(60.7%);
@@ -215,6 +215,24 @@ export default {
     top: 70%;
     right: 5%;
     width: 75px;
+  }
+}
+
+@media (min-width: 1500px) {
+  #small-cloud-left {
+    animation: left-clouds 32s linear infinite;
+  }
+
+  #big-cloud-left {
+    animation: left-clouds 40s linear infinite;
+  }
+
+  #small-cloud-right {
+    animation: right-clouds 36s linear infinite;
+  }
+
+  #big-cloud-right {
+    animation: right-clouds 30s linear infinite;
   }
 }
 </style>

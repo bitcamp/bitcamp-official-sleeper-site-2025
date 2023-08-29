@@ -18,10 +18,6 @@ body {
   position: relative;
 }
 
-pre {
-  font-family: Avenir;
-}
-
 @media (max-width: 575.98px) {
   html {
     font-size: 45%;
