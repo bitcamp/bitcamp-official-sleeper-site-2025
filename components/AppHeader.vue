@@ -120,7 +120,7 @@ export default {
   /* display: flex; */
   /* flex-flow: column nowrap; */
   width: 45vw;
-  font-size: 2.5rem;
+  white-space: nowrap;
 }
 
 .button-container {
@@ -194,6 +194,7 @@ export default {
     width: 85vw;
     line-height: 1.3;
     z-index: 5;
+    white-space: normal;
   }
 
   #small-cloud-left {
