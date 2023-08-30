@@ -94,7 +94,7 @@ export default {
   padding-bottom: 26vw;
   margin-bottom: 10vw;
   padding-top: 100px;
-  gap: 12px;
+  gap: 1.8vw;
   text-align: center;
   background-color: var(--color-sky);
 }
@@ -104,7 +104,7 @@ export default {
   flex-direction: column;
   align-items: center;
   gap: 3vw;
-  font-size: 1.7vw;
+  font-size: 2.5rem;
   margin-top: 0px;
   z-index: 5;
 }
@@ -114,6 +114,8 @@ export default {
   /* two lines */
   line-height: 1.3;
   font-size: 4rem;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 .header-body {
@@ -174,11 +176,14 @@ export default {
 
 /* mobile view - header size */
 @media (max-width: 768px) {
+  .header-container {
+    gap: 5vw;
+  }
   .header-content {
     gap: 3vw;
     top: 15vw;
     right: 22vw;
-    font-size: 3rem;
+    font-size: 2.8rem;
     padding-left: 2vw;
     padding-right: 2vw;
     gap: 10vw;
@@ -199,12 +204,12 @@ export default {
 
   #small-cloud-left {
     width: 75px;
-    top: 25%;
+    top: 28%;
   }
 
   #big-cloud-left {
     width: 112px;
-    top: 30%;
+    top: 33%;
   }
 
   #big-cloud-right {
