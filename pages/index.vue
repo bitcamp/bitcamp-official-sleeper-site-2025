@@ -7,10 +7,12 @@
 </script>
 
 <template>
-  <div class="app-container" ref="el">
+  <div style="overflow: scroll; height: 100vh" ref="el">
+  <div class="app-container" >
     <AppHeader :y="y"/>
     <PastEventsGrid />
     <AppFooter />
+  </div>
   </div>
 </template>
 
@@ -121,7 +123,7 @@ export default {
   display: flex;
   flex-direction: column;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
