@@ -18,7 +18,7 @@
 
     <div class="graphics">
       <img class="mountains" src="~/assets/img/images/mountains.svg" alt="mountains">
-      <img class="sun" src="~/assets/img/images/sun.svg" :style="{ transform: `translateY(${shiftY})`, filter: `hue-rotate(${hue}) brightness(130%) saturate(300%)` }">
+      <img class="sun" src="~/assets/img/images/sun.svg" :style="{ transform: `translate(200%, calc(-150% + ${shiftY}))`, filter: `hue-rotate(${hue}) brightness(140%) saturate(400%)` }">
       <img class="cowskull" src="~/assets/img/images/cowskull.svg">
       <img class="cactus" src="~/assets/img/images/cactus.svg">
     </div>
@@ -36,9 +36,10 @@ export default {
   },
   computed: {
     hue() {
-      return `${60 - Math.min(19, this.y/22) * 3}deg`;
+      return `${60 - Math.min(19, this.y/15) * 3}deg`;
     },
     shiftY() {
+      // return `${Math.min(19, this.y/25)}vw`;
       return `${Math.min(19, this.y/25)}vw`;
     }
   }
@@ -150,11 +151,11 @@ export default {
 
 .sun {
   position: absolute;
-  bottom: 15vw;
-  left: 45vw;
+  bottom: -4.7vw;
+  left: 23vw;
   width: 13.5vw;
   z-index: 1;
-  transform: translate(200%, -100%); 
+  /* transform: translateX(200%);  */
   /* animation: rise 3.5s linear forwards; */
 }
 
