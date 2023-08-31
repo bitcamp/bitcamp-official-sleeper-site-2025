@@ -7,7 +7,7 @@
 </script>
 
 <template>
-  <div style="overflow: scroll; height: 100vh" ref="el">
+  <div class="wrapper" ref="el">
     <div class="app-container" >
       <AppHeader :y="y"/>
       <PastEventsGrid />
@@ -117,6 +117,10 @@ export default {
 </script>
 
 <style scoped>
+.wrapper {
+  overflow: scroll; 
+  height: 100dvh;
+}
 .app-container {
   overflow: hidden;
   overflow-y: scroll;
