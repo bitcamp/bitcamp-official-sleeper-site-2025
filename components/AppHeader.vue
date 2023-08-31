@@ -18,7 +18,7 @@
 
     <div class="graphics">
       <img class="mountains" src="~/assets/img/images/mountains.svg" alt="mountains">
-      <img class="sun" src="~/assets/img/images/sun.svg" :style="{ transform: `translateY(${shiftY})`, filter: `hue-rotate(${hue}) brightness(176.7%) saturate(60.7%)` }">
+      <img class="sun" src="~/assets/img/images/sun.svg" :style="{ transform: `translateY(${shiftY})`, filter: `hue-rotate(${hue}) brightness(130%) saturate(300%)` }">
       <img class="cowskull" src="~/assets/img/images/cowskull.svg">
       <img class="cactus" src="~/assets/img/images/cactus.svg">
     </div>
@@ -36,7 +36,7 @@ export default {
   },
   computed: {
     hue() {
-      return `${Math.min(60, 60-(this.y/8))}deg`;
+      return `${60 - Math.min(19, this.y/22) * 3}deg`;
     },
     shiftY() {
       return `${Math.min(19, this.y/25)}vw`;
