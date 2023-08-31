@@ -18,7 +18,7 @@
 
     <div class="graphics">
       <img class="mountains" src="~/assets/img/images/mountains.svg" alt="mountains">
-      <img class="sun" src="~/assets/img/images/sun.svg">
+      <img class="sun" src="~/assets/img/images/sun.svg" :style="{ transform: `translate(200%, calc(-150% + ${shiftY}))`, filter: `hue-rotate(${hue}) brightness(140%) saturate(400%)` }">
       <img class="cowskull" src="~/assets/img/images/cowskull.svg">
       <img class="cactus" src="~/assets/img/images/cactus.svg">
     </div>
@@ -31,6 +31,18 @@ import SocialIcons from '~/components/SocialIcons.vue';
 export default {
   name: 'AppHeader',
   components: { LinkButton, SocialIcons },
+  props: {
+    y: Number
+  },
+  computed: {
+    hue() {
+      return `${60 - Math.min(19, this.y/15) * 3}deg`;
+    },
+    shiftY() {
+      // return `${Math.min(19, this.y/25)}vw`;
+      return `${Math.min(19, this.y/25)}vw`;
+    }
+  }
 };
 </script>
 
@@ -143,8 +155,8 @@ export default {
   left: 23vw;
   width: 13.5vw;
   z-index: 1;
-  transform: translate(200%, -100%); 
-  animation: rise 3.5s linear forwards;
+  /* transform: translateX(200%);  */
+  /* animation: rise 3.5s linear forwards; */
 }
 
 @keyframes rise {
