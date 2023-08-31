@@ -3,7 +3,7 @@
   import { useScroll } from '@vueuse/core';
 
   const el = ref(null);
-  const { y }= useScroll(el);
+  const { y }= useScroll(el, { behavior: 'smooth' });
 </script>
 
 <template>

@@ -17,9 +17,8 @@
     </div>
 
     <div class="graphics">
-      {{ y }}
       <img class="mountains" src="~/assets/img/images/mountains.svg" alt="mountains">
-      <img class="sun" src="~/assets/img/images/sun.svg" :style="{ transform: `translateY(${0}px)` }">
+      <img class="sun" src="~/assets/img/images/sun.svg" :style="{ transform: `translateY(${shiftY})`, filter: `hue-rotate(${hue}) brightness(176.7%) saturate(60.7%)` }">
       <img class="cowskull" src="~/assets/img/images/cowskull.svg">
       <img class="cactus" src="~/assets/img/images/cactus.svg">
     </div>
@@ -34,6 +33,14 @@ export default {
   components: { LinkButton, SocialIcons },
   props: {
     y: Number
+  },
+  computed: {
+    hue() {
+      return `${Math.min(60, 60-(this.y/8))}deg`;
+    },
+    shiftY() {
+      return `${Math.min(19, this.y/25)}vw`;
+    }
   }
 };
 </script>
@@ -143,8 +150,8 @@ export default {
 
 .sun {
   position: absolute;
-  bottom: -4.7vw;
-  left: 23vw;
+  bottom: 15vw;
+  left: 45vw;
   width: 13.5vw;
   z-index: 1;
   transform: translate(200%, -100%); 
