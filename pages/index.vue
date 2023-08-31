@@ -8,11 +8,11 @@
 
 <template>
   <div style="overflow: scroll; height: 100vh" ref="el">
-  <div class="app-container" >
-    <AppHeader :y="y"/>
-    <PastEventsGrid />
-    <AppFooter />
-  </div>
+    <div class="app-container" >
+      <AppHeader :y="y"/>
+      <PastEventsGrid />
+      <AppFooter />
+    </div>
   </div>
 </template>
 
