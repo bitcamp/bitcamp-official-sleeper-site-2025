@@ -118,7 +118,8 @@ export default {
 
 <style scoped>
 .wrapper {
-  overflow: scroll; 
+  overflow-y: scroll; 
+  overflow-x: hidden;
   height: 100dvh;
 }
 .app-container {
