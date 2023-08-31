@@ -121,8 +121,7 @@ export default {
 .header-body {
   /* display: flex; */
   /* flex-flow: column nowrap; */
-  width: 45vw;
-  white-space: nowrap;
+  min-width: 45vw;
 }
 
 .button-container {
