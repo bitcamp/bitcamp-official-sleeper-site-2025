@@ -17,8 +17,9 @@
     </div>
 
     <div class="graphics">
+      {{ y }}
       <img class="mountains" src="~/assets/img/images/mountains.svg" alt="mountains">
-      <img class="sun" src="~/assets/img/images/sun.svg">
+      <img class="sun" src="~/assets/img/images/sun.svg" :style="{ transform: `translateY(${0}px)` }">
       <img class="cowskull" src="~/assets/img/images/cowskull.svg">
       <img class="cactus" src="~/assets/img/images/cactus.svg">
     </div>
@@ -31,6 +32,9 @@ import SocialIcons from '~/components/SocialIcons.vue';
 export default {
   name: 'AppHeader',
   components: { LinkButton, SocialIcons },
+  props: {
+    y: Number
+  }
 };
 </script>
 
@@ -144,7 +148,7 @@ export default {
   width: 13.5vw;
   z-index: 1;
   transform: translate(200%, -100%); 
-  animation: rise 3.5s linear forwards;
+  /* animation: rise 3.5s linear forwards; */
 }
 
 @keyframes rise {

@@ -1,6 +1,14 @@
+<script setup lang="ts">
+  import { ref } from 'vue';
+  import { useScroll } from '@vueuse/core';
+
+  const el = ref(null);
+  const { y }= useScroll(el);
+</script>
+
 <template>
-  <div class="app-container">
-    <AppHeader />
+  <div class="app-container" ref="el">
+    <AppHeader :y="y"/>
     <PastEventsGrid />
     <AppFooter />
   </div>
@@ -109,10 +117,11 @@ export default {
 <style scoped>
 .app-container {
   overflow: hidden;
+  overflow-y: scroll;
   display: flex;
   flex-direction: column;
   width: 100vw;
-  min-height: 100%;
+  height: 100vh;
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
