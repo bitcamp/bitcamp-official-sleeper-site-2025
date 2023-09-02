@@ -1,5 +1,5 @@
 <template>
-  <div class="header-container">
+  <div class="header-container" :style="{ backgroundColor: `${backgroundColor}` }">
     <img src="~/public/bitcamp-brand/logos/wordmark-brown.svg" width="300" alt="Bitcamp" />
     <div class="cloud">
       <img id="small-cloud-left" src="../assets/img/images/small-cloud.svg" />
@@ -41,6 +41,22 @@ export default {
     shiftY() {
       // return `${Math.min(19, this.y/25)}vw`;
       return `${Math.min(19, this.y/25)}vw`;
+    },
+    backgroundColor() {
+      const step = 60;
+      
+      const original = [18, 33, 60];
+      const final = [17, 24, 53];
+
+      const hueDiff = original[0] - final[0];
+      const saturationDiff = original[1] - final[1];
+      const brightnessDiff = original[2] - final[2];
+
+      const hue = 18 - Math.min(this.y / step, hueDiff);
+      const saturation = 33 - Math.min(this.y/step, saturationDiff)
+      const brightness = 60 - Math.min(this.y / step, brightnessDiff);
+
+      return `hsl(${hue}, ${saturation}%, ${brightness}%)`;
     }
   }
 };
@@ -108,7 +124,7 @@ export default {
   padding-top: 100px;
   gap: 1.8vw;
   text-align: center;
-  background-color: var(--color-sky);
+  /* background-color: var(--color-sky); */
 }
 
 .header-content {
