@@ -1,3 +1,4 @@
 # Netlify redirects
-<!-- Example:
-/orgapp     https://forms.gle/o8ReRB6vfvJBRtRx7 -->
+/orgapp     https://forms.gle/kpS58obf7qq9DmYZ7                                                                     302
+/orgslides  https://docs.google.com/presentation/d/1VMj3Oz-QeOyqpiZsok1C20BYaRz0GVQBxtRNNiWWRGo/edit?usp=sharing    302
+/socks      https://forms.gle/eXqDhTgaUGUWFek86                                                                     302
