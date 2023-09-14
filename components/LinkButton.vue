@@ -21,23 +21,28 @@ export default {
 </script>
 
 <style scoped>
+
 .button {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1vw;
+  padding: 0.8vw;
   border-radius: 1rem;
-  background-color: #009051;
+  background-color: var(--color-midnight);
   transition: 0.4s;
+  width: 25%;
+  margin: 0 auto;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
 }
 
 .button:hover {
-  background-color: #005f36;
+  background-color: #132226;
   transition: 0.4s;
 }
 
 .button-text {
-  font-size: 1.7vw;
+  font-size: 1.3vw;
 }
 
 /* mobile view */

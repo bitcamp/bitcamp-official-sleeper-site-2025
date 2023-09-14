@@ -11,9 +11,14 @@
       <h1 class="header-title">We're out exploring, but we'll be back soon!</h1>
       <div class="header-body">
         <p>Bitcamp returns in 2024 for our 10-year anniversary!</p>
-        <p>In the meantime, follow our socials for updates.</p>
+        <p>In the meantime, apply to join us as an organizer:</p>
+        <LinkButton
+          text="Apply Now!"
+          link="https://forms.gle/kpS58obf7qq9DmYZ7"
+        />
+        <p>Follow our socials for updates.</p>
+        <SocialIcons />
       </div>
-      <SocialIcons />
     </div>
 
     <div class="graphics">
@@ -119,7 +124,7 @@ export default {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding-bottom: 26vw;
+  padding-bottom: 22vw;
   margin-bottom: 10vw;
   padding-top: 100px;
   gap: 1.8vw;

@@ -24,8 +24,9 @@ export default {
 <style>
 
 .social-icon-container {
-  display: flex;
   z-index: 10;
+  padding-top: 0.5vw;
+  align-items: center;
   
 }
 .social-icon {
