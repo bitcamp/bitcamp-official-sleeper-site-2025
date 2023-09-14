@@ -12,10 +12,9 @@
       <div class="header-body">
         <p>Bitcamp returns in 2024 for our 10-year anniversary!</p>
         <p>In the meantime, apply to join us as an organizer:</p>
-        <LinkButton
-          text="Apply Now!"
-          link="https://forms.gle/kpS58obf7qq9DmYZ7"
-        />
+        <LinkButton text="Apply Now!" link="https://forms.gle/kpS58obf7qq9DmYZ7" />
+      </div>
+      <div>
         <p>Follow our socials for updates.</p>
         <SocialIcons />
       </div>
