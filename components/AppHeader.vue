@@ -14,7 +14,7 @@
         <p>In the meantime, apply to join us as an organizer:</p>
         <LinkButton text="Apply Now!" link="https://forms.gle/kpS58obf7qq9DmYZ7" />
       </div>
-      <div>
+      <div class="socials">
         <p>Follow our socials for updates.</p>
         <SocialIcons />
       </div>
@@ -203,6 +203,12 @@ export default {
   width: 6vw;
   bottom: -0.66vw;
   right: 5.6vw;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* mobile view - header size */
