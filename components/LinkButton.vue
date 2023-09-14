@@ -42,17 +42,20 @@ export default {
 }
 
 .button-text {
-  font-size: 1.3vw;
+  font-size: 2rem;
 }
 
 /* mobile view */
 @media (max-width: 768px) {
   .button {
+    margin-top: 17px;
     padding: 2vw;
+    width: 30%;
+
   }
 
   .button-text {
-    font-size: 3vw;
+    font-size: 2.5rem;
   }
 }
 </style>
