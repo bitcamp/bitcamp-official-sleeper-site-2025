@@ -28,7 +28,7 @@ export default {
   align-items: center;
   padding: 0.8vw;
   border-radius: 1rem;
-  background-color: var(--color-midnight);
+  background-color: var(--color-bitcamp);
   transition: 0.4s;
   width: 25%;
   margin: 0 auto;
@@ -37,7 +37,7 @@ export default {
 }
 
 .button:hover {
-  background-color: #132226;
+  background-color: #ff571f;
   transition: 0.4s;
 }
 
