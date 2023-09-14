@@ -26,7 +26,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.8vw;
+  padding: 1vw;
   border-radius: 1rem;
   background-color: var(--color-bitcamp);
   transition: 0.4s;
@@ -42,7 +42,7 @@ export default {
 }
 
 .button-text {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 /* mobile view */
@@ -50,12 +50,12 @@ export default {
   .button {
     margin-top: 17px;
     padding: 2vw;
-    width: 30%;
+    width: 35%;
 
   }
 
   .button-text {
-    font-size: 2.5rem;
+    font-size: 2.7rem;
   }
 }
 </style>
