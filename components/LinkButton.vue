@@ -50,12 +50,12 @@ export default {
   .button {
     margin-top: 17px;
     padding: 2vw;
-    width: 35%;
+    width: 45%;
 
   }
 
   .button-text {
-    font-size: 2.7rem;
+    font-size: 3rem;
   }
 }
 </style>

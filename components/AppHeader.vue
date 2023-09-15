@@ -40,7 +40,7 @@ export default {
   },
   computed: {
     hue() {
-      return `${60 - Math.min(19, this.y/15) * 3}deg`;
+      return `${60 - Math.max(0, Math.min(19, this.y/15) * 3)}deg`;
     },
     shiftY() {
       // return `${Math.min(19, this.y/25)}vw`;
@@ -229,7 +229,7 @@ export default {
   .header-title {
     width: auto;
     /* one line */
-    line-height: 1;
+    line-height: 1.2;
   }
 
   .header-body {
