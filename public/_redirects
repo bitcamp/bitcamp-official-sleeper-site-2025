@@ -1,7 +1,4 @@
 # Netlify redirects
-/orgapp                 https://forms.gle/kpS58obf7qq9DmYZ7                                                                     302
-/orgslides              https://docs.google.com/presentation/d/1VMj3Oz-QeOyqpiZsok1C20BYaRz0GVQBxtRNNiWWRGo/edit?usp=sharing    302
-/socks                  https://forms.gle/eXqDhTgaUGUWFek86                                                                     302
 /roster                 https://docs.google.com/spreadsheets/d/1oKQH855Y0H3ubD9l2jTt1Ns0N9JHQgJjnDPCi-H7FpM/edit?usp=sharing    302
 /contact-collection     https://docs.google.com/spreadsheets/d/1ZsV-R0y1aK2zBGsCMP_0t8EFqEYkzn7z7b1AtznWggU/edit#gid=0          302
 /tabling                https://docs.google.com/spreadsheets/d/1lTmNZD6ltLjzdzvN1EJHagVhiSs41l4YuTisGzJ78_Y/edit?usp=sharing    302
