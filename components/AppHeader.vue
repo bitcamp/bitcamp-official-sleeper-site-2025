@@ -10,10 +10,16 @@
     <div class="header-content">
       <h1 class="header-title">We're out exploring, but we'll be back soon!</h1>
       <div class="header-body">
-        <p>Bitcamp returns in 2024 for our 10-year anniversary!</p>
-        <p>In the meantime, apply to join us as an organizer:</p>
-        <LinkButton text="Apply Now!" link="https://forms.gle/kpS58obf7qq9DmYZ7" />
+        <p>Bitcamp will return in April 2025!</p>
+        <p>In the meantime, indicate your interest in Bitcamp 2025 here.</p>
+        <LinkButton text="I'm Interested!" link="https://forms.gle/zbJnXHsDyQxaereH9" />
       </div>
+      <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" 
+        href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2025-season&utm_content=white" 
+        target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2025/mlh-trust-badge-2025-white.svg" 
+        alt="Major League Hacking 2025 Hackathon Season" 
+        style="width:100%">
+      </a>
       <div class="socials">
         <p>Follow our socials for updates.</p>
         <SocialIcons />
