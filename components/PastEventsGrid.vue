@@ -54,7 +54,6 @@ export default {
 </script>
 
 <style scoped>
-
 .elvis {
   width: 125px;
   height: 125px;
@@ -89,8 +88,6 @@ export default {
   text-align: center;
   padding-top: 3rem;
   padding-bottom: 4rem;
-
-  color: #FFC08E;
 }
 
 .footer {
@@ -105,6 +102,7 @@ export default {
 .links a {
   text-decoration: underline;
 }
+
 .floatie-text {
   position: absolute;
   text-align: center;
@@ -125,6 +123,7 @@ export default {
   .floatie-text {
     font-size: 2.5vw;
   }
+
   .elvis {
     width: 75px;
     height: 75px;

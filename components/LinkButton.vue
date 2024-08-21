@@ -21,7 +21,6 @@ export default {
 </script>
 
 <style scoped>
-
 .button {
   display: flex;
   justify-content: center;
@@ -37,7 +36,7 @@ export default {
 }
 
 .button:hover {
-  background-color: #ff571f;
+  background-color: hsla(227, 42%, 13%, 1);
   transition: 0.4s;
 }
 

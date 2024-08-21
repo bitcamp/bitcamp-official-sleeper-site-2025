@@ -1,15 +1,7 @@
-<script setup lang="ts">
-  import { ref } from 'vue';
-  import { useScroll } from '@vueuse/core';
-
-  const el = ref(null);
-  const { y }= useScroll(el, { behavior: 'smooth' });
-</script>
-
 <template>
   <div class="wrapper" ref="el">
-    <div class="app-container" >
-      <AppHeader :y="y"/>
+    <div class="app-container">
+      <AppHeader />
       <PastEventsGrid />
     </div>
   </div>
@@ -116,10 +108,11 @@ export default {
 
 <style scoped>
 .wrapper {
-  overflow-y: scroll; 
+  overflow-y: scroll;
   overflow-x: hidden;
   height: 100dvh;
 }
+
 .app-container {
   overflow: hidden;
   overflow-y: scroll;
@@ -129,6 +122,6 @@ export default {
   min-height: 100vh;
   background-size: 100% auto;
   background-repeat: no-repeat;
+  background-color: hsla(227, 42%, 13%, 1);
 }
-
 </style>
