@@ -1,6 +1,6 @@
 <template>
-  <div class="header-container" :style="{ backgroundColor: `${backgroundColor}` }">
-    <img src="../assets/img/images/bitcamp-lightup.svg" width="300" alt="Bitcamp" />
+  <div class="header-container">
+    <img src="../assets/img/images/bitcamp-lightup.svg" width="350" alt="Bitcamp" />
     <div class="header-content">
       <h1 class="header-title">We’re currently sleeping, but we’ll see you in April 2025!</h1>
       <div class="socials">
@@ -31,30 +31,6 @@ import SocialIcons from '~/components/SocialIcons.vue';
 export default {
   name: 'AppHeader',
   components: { LinkButton, SocialIcons },
-  props: {
-    y: Number
-  },
-  computed: {
-    hue() {
-      return `${60 - Math.max(0, Math.min(19, this.y / 15) * 3)}deg`;
-    },
-    backgroundColor() {
-      const step = 60;
-
-      const original = [18, 33, 60];
-      const final = [17, 24, 53];
-
-      const hueDiff = original[0] - final[0];
-      const saturationDiff = original[1] - final[1];
-      const brightnessDiff = original[2] - final[2];
-
-      const hue = 18 - Math.min(this.y / step, hueDiff);
-      const saturation = 33 - Math.min(this.y / step, saturationDiff)
-      const brightness = 60 - Math.min(this.y / step, brightnessDiff);
-
-      return `hsl(${hue}, ${saturation}%, ${brightness}%)`;
-    }
-  }
 };
 </script>
 
@@ -69,7 +45,7 @@ export default {
   padding-top: 75px;
   gap: 1.8vw;
   text-align: center;
-  /* background-color: var(--color-sky); */
+  background: linear-gradient(180deg, hsla(227, 42%, 13%, 1), hsla(234, 27%, 31%, 1));
 }
 
 .header-content {
@@ -84,7 +60,6 @@ export default {
 
 .header-title {
   width: 70vw;
-  /* two lines */
   line-height: 1.3;
   font-size: 4rem;
   padding-left: 4px;
@@ -92,8 +67,6 @@ export default {
 }
 
 .header-body {
-  /* display: flex; */
-  /* flex-flow: column nowrap; */
   min-width: 45vw;
   width: 85vw;
 }
