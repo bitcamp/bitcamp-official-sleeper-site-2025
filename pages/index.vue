@@ -11,7 +11,6 @@
     <div class="app-container" >
       <AppHeader :y="y"/>
       <PastEventsGrid />
-      <AppFooter />
     </div>
   </div>
 </template>
@@ -19,11 +18,10 @@
 <script lang="ts">
 import AppHeader from '~/components/AppHeader.vue';
 import PastEventsGrid from '~/components/PastEventsGrid.vue';
-import AppFooter from '~/components/AppFooter.vue';
 
 export default {
   name: 'HomePage',
-  components: { AppHeader, PastEventsGrid, AppFooter },
+  components: { AppHeader, PastEventsGrid },
   head() {
     return {
       title: 'Bitcamp',

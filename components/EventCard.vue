@@ -2,9 +2,11 @@
   <div v-if="year" class="event" :style="{
       backgroundImage: `url('/img/thumbnails/${year}-thumb.jpg')`,
     }">
+    <!-- Commenting binoculars out
     <div v-if="year === 2014">
       <img class="binoculars" src="../assets/img/images/binoculars.svg"/>
     </div>
+    -->
     <a :href="`https://${year}.bit.camp`">
       <div class="filler">
         <div class="event-text">
@@ -13,11 +15,6 @@
         </div>
       </div>
     </a>
-  </div>
-  <div v-else class="event">
-    <div class="event-text-only">
-      <div class="event-theme">Explore Our<br>Past Events</div>
-    </div>
   </div>
 </template>
 
@@ -62,15 +59,7 @@ export default {
 .event-text {
   position: absolute;
   bottom: 0;
-  padding: 0px 0px 40px 40px;
-}
-
-.event-text-only {
-  margin: 0px 60px 0 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+  padding: 0px 0px 20px 25px;
 }
 
 .binoculars {
@@ -82,8 +71,9 @@ export default {
 }
 
 .event-text h3 {
-  font-family: Avenir;
-  font-weight: 900;
+  font-family: Aleo;
+  font-weight: 700;
+  font-size: 4rem;
 }
 
 .event-theme {
