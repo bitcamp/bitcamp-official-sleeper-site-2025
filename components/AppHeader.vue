@@ -10,8 +10,7 @@
       <div class="header-body">
         <LinkButton text="I'm Interested!" link="https://forms.gle/zbJnXHsDyQxaereH9" />
       </div>
-      <a id="mlh-trust-badge"
-        style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000"
+      <a id="mlh-trust-badge" class="mlh-display"
         href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2025-season&utm_content=white"
         target="_blank"><img
           src="https://s3.amazonaws.com/logged-assets/trust-badge/2025/mlh-trust-badge-2025-white.svg"
@@ -21,6 +20,7 @@
 
     <div class="graphics">
       <img class="trees" src="../assets/img/images/trees.svg" alt="trees">
+      <img class="campfire" src="../assets/img/images/campfire.svg" alt="campfire">
     </div>
   </div>
 </template>
@@ -65,7 +65,7 @@ export default {
   align-items: center;
   flex-direction: column;
   padding-bottom: 45vw;
-  margin-bottom: 10vw;
+  margin-bottom: 15vw;
   padding-top: 75px;
   gap: 1.8vw;
   text-align: center;
@@ -76,7 +76,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3vw;
+  gap: 1.5vw;
   font-size: 2.5rem;
   margin-top: 0px;
   z-index: 5;
@@ -102,13 +102,35 @@ export default {
   margin-top: 0.5vw;
 }
 
+.mlh-display {
+  display: block;
+  max-width: 100px;
+  min-width: 60px;
+  position: fixed;
+  right: 50px;
+  top: 0;
+  width: 10%;
+  z-index: 100000;
+}
+
+.graphics {
+  display: flex;
+  justify-content: center;
+}
+
 .trees {
   position: absolute;
   width: 100vw;
   bottom: -5vw;
   left: 0vw;
-  /* transform: translate(-50%); */
-  z-index: 10;
+  z-index: 1;
+}
+
+.campfire {
+  position: absolute;
+  bottom: -13vw;
+  z-index: 1;
+  width: 30vw;
 }
 
 .socials {
