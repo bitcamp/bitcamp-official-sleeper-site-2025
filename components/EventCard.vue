@@ -1,12 +1,7 @@
 <template>
   <div v-if="year" class="event" :style="{
-      backgroundImage: `url('/img/thumbnails/${year}-thumb.jpg')`,
-    }">
-    <!-- Commenting binoculars out
-    <div v-if="year === 2014">
-      <img class="binoculars" src="../assets/img/images/binoculars.svg"/>
-    </div>
-    -->
+    backgroundImage: `url('/img/thumbnails/${year}-thumb.jpg')`,
+  }">
     <a :href="`https://${year}.bit.camp`">
       <div class="filler">
         <div class="event-text">
@@ -43,31 +38,19 @@ export default {
   width: min(420px, 70vw);
   aspect-ratio: 3 / 2;
   margin: 20px;
-
   text-align: left;
-
   border-radius: 35px;
-
   background-size: cover !important;
   /* !important so we don't have to repeat*/
   box-shadow: 0px, 0px, 20px, 0px rgba(0, 0, 0, 0.2);
   position: relative;
-
-  z-index: 10;
+  z-index: 1;
 }
 
 .event-text {
   position: absolute;
   bottom: 0;
   padding: 0px 0px 20px 25px;
-}
-
-.binoculars {
-  position: absolute;
-  top: 75%;
-  left: 75%;
-  width: 50%;
-  height: 50%;
 }
 
 .event-text h3 {
@@ -104,18 +87,6 @@ export default {
 
   .event-text-spacing {
     padding: 0px;
-  }
-}
-
-@media (min-width: 950px) and (max-width: 1100px) {
-  .binoculars {
-    left: 65%;
-  }
-}
-
-@media (max-width: 576px) {
-  .binoculars {
-    left: 70%;
   }
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div class="header-container">
-    <img src="../assets/img/images/bitcamp-lightup.svg" width="350" alt="Bitcamp" />
+    <img src="../assets/img/images/bitcamp-lightup.svg" width="300" alt="Bitcamp" />
     <div class="header-content">
       <h1 class="header-title">We’re currently sleeping, but we’ll see you in April 2025!</h1>
       <div class="socials">
@@ -20,6 +20,7 @@
 
     <div class="graphics">
       <img class="trees" src="../assets/img/images/trees.svg" alt="trees">
+      <img class="trees-small" src="../assets/img/images/trees-small.svg" alt="trees">
       <img class="campfire" src="../assets/img/images/campfire.svg" alt="campfire">
     </div>
   </div>
@@ -40,7 +41,7 @@ export default {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding-bottom: 45vw;
+  padding-bottom: 30vw;
   margin-bottom: 15vw;
   padding-top: 75px;
   gap: 1.8vw;
@@ -83,7 +84,7 @@ export default {
   right: 50px;
   top: 0;
   width: 10%;
-  z-index: 100000;
+  z-index: 10000000;
 }
 
 .graphics {
@@ -97,6 +98,19 @@ export default {
   bottom: -5vw;
   left: 0vw;
   z-index: 1;
+
+  @media (max-width: 768) {
+    display: none;
+  }
+}
+
+.trees-small {
+  position: absolute;
+  width: 100vw;
+  bottom: -5vw;
+  left: 0vw;
+  z-index: 1;
+  display: none;
 }
 
 .campfire {
@@ -140,6 +154,16 @@ export default {
     line-height: 1.3;
     z-index: 5;
     white-space: normal;
+  }
+}
+
+@media (max-width: 978px) {
+  .trees {
+    display: none;
+  }
+
+  .trees-small {
+    display: block;
   }
 }
 </style>

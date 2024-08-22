@@ -91,9 +91,9 @@ export default {
 }
 
 .footer {
-  position: relative;
+  /* position: relative; */
   box-sizing: border-box;
-
+  margin-top: 5vw;
   height: 15vw;
   width: 100vw;
   overflow: hidden;
