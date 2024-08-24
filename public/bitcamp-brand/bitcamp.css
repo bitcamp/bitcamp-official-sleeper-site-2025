@@ -6,7 +6,7 @@
   --color-white: #ffffff;
 
   /* Secondary */
-  --color-soil: #8C685A;
+  --color-soil: hsla(227, 42%, 13%, 1);
   --color-flame: #ff3f46;
   --color-sky: #BA8B77;
 }
