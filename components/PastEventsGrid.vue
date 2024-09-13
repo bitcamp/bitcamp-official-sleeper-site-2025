@@ -15,6 +15,7 @@
         <div class="floatie-text past-grid-container">
           <div class="links">
             <a href="http://mlh.io/code-of-conduct">MLH Code of Conduct</a> |
+            <a href="/sponsor" target="_blank">Sponsor Us</a> |
             <a href="/brand.pdf">Brand Guidelines</a> |
             <a href="mailto:hello@bit.camp">Contact Us</a>
             <div class="copyright">
