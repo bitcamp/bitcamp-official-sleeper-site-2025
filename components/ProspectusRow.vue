@@ -6,7 +6,7 @@
         </a>
         <div style="display: flex; flex-direction: column;">
             <span>{{ categoryName }}</span>
-            <span v-if="subText" style="font-size: 0.75rem;">{{ subText }}</span>
+            <span v-if="subText" style="font-size: 1.25rem;">{{ subText }}</span>
         </div>
     </div>
 
@@ -53,4 +53,6 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.Rtable-cell {}
+</style>

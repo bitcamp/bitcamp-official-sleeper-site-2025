@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <main class="row justify-content-center">
-            <section class="col-lg-7">
+            <section class="col-lg-8">
                 <section class="SupportSection">
                     <a href="/" class="home-link">
                         <img src="../assets/img/icons/go-back.svg" alt="Go Back" />
@@ -10,34 +10,36 @@
                     <h1>
                         <strong class="SupportTitle"> help support </strong> Bitcamp 2024!
                     </h1>
+                    <br>
                     <p>Hello Potential Sponsor!</p>
                     <p>
                         Bitcamp, hosted annually at the University of Maryland, is one of the largest
                         collegiate hackathons on the East Coast, bringing together thousands of students
-                        each year. This year is a truly special milestone for us as we proudly celebrate the
-                        <b>10th anniversary</b> of Bitcamp! Over the past decade, Bitcamp has served as a hub
-                        of innovation, pushing limits and fostering creativity by uniting <b>9,000+</b>
-                        talented hackers that have created <b>1,200+</b> hacks. Our hackathon will be hosted <b>in
-                            person</b> at the
-                        University of Maryland from April 19th to 21st, and we are expecting over <b>1,000</b>
-                        attendees!.
+                        each year. This year marks a special milestone—our <b>11th anniversary</b>! Over the past
+                        decade, Bitcamp has become a thriving hub of creativity and technical exploration, uniting over
+                        <b>10,000+</b> passionate hackers who have developed more than <b>1,350+</b> innovative
+                        projects. As we look back on a decade of breakthroughs, we're excited to continue pushing
+                        boundaries and fostering the next generation of tech leaders. We can' t wait to host over
+                        <b>1,000</b> attendees at Bitcamp 2025 <b> in person </b> at the University of Maryland
+                        from <b>April 11th to 13th</b>.
                     </p>
                     <p>
                         Bitcamp is a melting pot of creativity; a great place to influence a diverse group
                         of the nation's brightest innovators who are passionate about solving the
                         problems of tomorrow. Hackers and their teams develop a multi-disciplinary
-                        mindset. This year, we are introducing a new <b>App Development</b> track to introduce
+                        mindset. Last year, we launched a new <b>App Development</b> track to introduce
                         hackers to the software development life cycle and a new <b>Cybersecurity</b> track to
-                        facilitate discussions of web vulnerabilities in addition to our ML track we debuted
-                        last year. Not only focusing on the coding aspects of their projects, they are also
-                        challenged to learn new skills including project management and user-friendly
-                        design. Bitcamp presents an excellent opportunity for recruitment and tech
-                        mentorship.
+                        facilitate discussions of web vulnerabilities. In addition to the previously mentioned tracks,
+                        our popular <b> Machine Learning </b> and <b> Quantum </b> tracks will be returning this year.
+                        All
+                        hackers are also challenged to learn new skills including project management, user-friendly
+                        design, and cooperative coding. Bitcamp presents an excellent opportunity for recruitment and
+                        tech mentorship.
                     </p>
                     <p>
                         Last year, we made some unforgettable memories with the more than 1,000
-                        hackers that registered to attend the event and saw some incredible talent in the
-                        125 projects that were submitted. Check out the amazing array of hacks at:
+                        hackers who registered to attend the event and saw some incredible talent in the
+                        158 projects that were submitted. Check out the amazing array of hacks at:
                         <b><a
                                 href="https://bitcamp2024.devpost.com/project-gallery">https://bitcamp202.devpost.com/project-gallery</a></b>!
                     </p>
@@ -46,12 +48,12 @@
                         donations made to Bitcamp will be fully tax-deductible.
                     </p>
                     <p>
-                        We invite you to review the various tiers of sponsorship below. If you’re interested in becoming
-                        an official
-                        sponsor
-                        for Bitcamp 2024, we’d love to chat! You can reach us at <b><a
-                                href="mailto:sponsorship@bit.camp">sponsorship@bit.camp</a></b>. We
-                        hope to see you by the campfire!
+                        We invite you to review the various tiers of sponsorship below. More detailed
+                        information regarding each individual perk can be accessed on our website by
+                        visiting <a href="https://bit.camp/sponsor">bit.camp/sponsor</a>. If you're interested in
+                        becoming an official sponsor for Bitcamp 2025, our biggest event yet, we'd love to chat! You can
+                        reach us at <b><a href="mailto:sponsorship@bit.camp">sponsorship@bit.camp</a></b>. We hope to
+                        see you by the campfire!
                     </p>
                     <p>Best,<br>The Bitcamp Team</p>
                     <hr class="divider" />
@@ -387,7 +389,7 @@
                             'Giga',
                             'Tera',
                             'Peta',
-                        ]" :args="['', '', '', '2 min', '2 min', '4 min']"
+                        ]" :args="['', '', '', '2 min ($350)', '2 min ($350)', '4 min ($350)']"
                             :description="'This add-on is open to Giga and Tera sponsors, who will be given special recognition in our marketing materials as a co-host. '" />
 
 
@@ -927,6 +929,7 @@ h2 {
 
     .tooltips::after {
         background-color: #ffffff;
+        color: black;
         border-radius: var(--border-radius);
         border: solid 2px var(--color-highlight);
         display: none;
