@@ -7,6 +7,7 @@
     <div class="Rtable-cell Rtable-cell-Mega title-row"></div>
     <div class="Rtable-cell Rtable-cell-Giga title-row"></div>
     <div class="Rtable-cell Rtable-cell-Tera title-row"></div>
+    <div class="Rtable-cell Rtable-cell-Peta title-row"></div>
 </template>
 
 <script>

@@ -1,7 +1,7 @@
 <template>
     <div class="Rtable-cell Rtable-category-cell" :class="'Rtable-misc-category-cell-' + type">
         <a class="tooltips direction" :title="perk" :description="description">
-            <img src="../assets/images/icons/question-mark-black.svg" alt="Question Mark" />
+            <img src="../assets/img/icons/question-mark-black.svg" alt="Question Mark" />
         </a>
         <span v-if="bolded"><b>{{ perk }}</b></span>
         <span v-else>{{ perk }}</span>
@@ -10,6 +10,7 @@
     <div class="Rtable-cell Rtable-cell-misc" :class="'Rtable-misc-cell-' + type">
         {{ price }}
     </div>
+    <div class="Rtable-cell Rtable-cell-blank"></div>
     <div class="Rtable-cell Rtable-cell-blank"></div>
     <div class="Rtable-cell Rtable-cell-blank"></div>
     <div class="Rtable-cell Rtable-cell-blank"></div>

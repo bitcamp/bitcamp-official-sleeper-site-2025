@@ -4,7 +4,7 @@
             <section class="col-lg-7">
                 <section class="SupportSection">
                     <a href="/" class="home-link">
-                        <img src="../assets/images/icons/go-back.svg" alt="Go Back" />
+                        <img src="../assets/img/icons/go-back.svg" alt="Go Back" />
                         <span>Home</span>
                     </a>
                     <h1>
@@ -95,6 +95,9 @@
                         <div class="Rtable-cell Rtable-cell--head Rtable-cell-Tera">
                             Tera
                         </div>
+                        <div class="Rtable-cell Rtable-cell--head Rtable-cell-Peta">
+                            Peta
+                        </div>
 
                         <ProspectusRow :categoryName="'Contribution'" :tierNames="[
                             'Byte',
@@ -102,10 +105,12 @@
                             'Mega',
                             'Giga',
                             'Tera',
+                            'Peta',
                         ]" :args="[
-                            '$1,500',
+                            '$2,000',
                             '$3,000',
-                            '$6,000',
+                            '$5,000',
+                            '$7,000',
                             '$10,000',
                             '$15,000',
                         ]" :header="'first-row Rtable-category-cell-full'" />
@@ -116,9 +121,11 @@
                             'Mega',
                             'Giga',
                             'Tera',
+                            'Peta',
                         ]" :args="[
                             'check-b',
                             'check-b',
+                            'check-w',
                             'check-w',
                             'check-w',
                             'check-w',
@@ -130,12 +137,14 @@
                             'Mega',
                             'Giga',
                             'Tera',
+                            'Peta',
                         ]" :args="[
                             '',
                             '1 min',
                             '2 min',
                             '3 min',
-                            '5-10 min',
+                            '5 min',
+                            '10 min',
                         ]"
                             :description="'Sponsors with this perk will get speaking time at the opening ceremony to discuss their company, their prize category, and anything else that they would like! Please keep in mind the designated time allotment for your tier when planning your presentation.'" />
                         <ProspectusRow :categoryName="'Provide a Prize'" :tierNames="[
@@ -144,7 +153,8 @@
                             'Mega',
                             'Giga',
                             'Tera',
-                        ]" :args="['', '', 'check-w', 'check-w', 'check-w']"
+                            'Peta',
+                        ]" :args="['', '', 'check-w', 'check-w', 'check-w', 'check-w']"
                             :description="'This prize category can be something general, such as “Best Security Hack” or “Best Use of Machine Learning”, or something branded, such as “Best Use of [insert company]’s API”. Our hackers will have the option of submitting their hacks/projects to your prize category, and you will be able to judge projects, select winners, and distribute your own prizes accordingly during the closing ceremony. We encourage our sponsors to choose prizes that appeal to the hackers over service credits/something niche.'" />
                         <ProspectusRow :categoryName="'Panel Discussion'" :tierNames="[
                             'Byte',
@@ -152,7 +162,8 @@
                             'Mega',
                             'Giga',
                             'Tera',
-                        ]" :args="['', '', '', 'check-w', 'check-w']"
+                            'Peta',
+                        ]" :args="['', '', '', 'check-w', 'check-w', 'check-w']"
                             :description="'A panel discussion is another great way for sponsors to interact with our hackers. This includes a moderated discussion on a topic and questions curated by our team (which will be provided to company representatives beforehand), as well as an open Q&A session at the end for hackers to ask our panelists. We recommend ideally 1 person to be on the panel from each eligible company but will allow max 2 people.'" />
                         <ProspectusRow :categoryName="'Closing Ceremony Talk'" :tierNames="[
                             'Byte',
@@ -160,7 +171,8 @@
                             'Mega',
                             'Giga',
                             'Tera',
-                        ]" :args="['', '', '', '5 min', '15 min']"
+                            'Peta',
+                        ]" :args="['', '', '', '5 min', '8 min', '12 min']"
                             :description="'This is a great opportunity for a company to give an inspiring and motivating talk to our hackers. This could be about an experience, something related to our hackathon’s theme, or anything realistically.'" />
                         <ProspectusRow :categoryName="'Sponsored Side Event'" :subText="'(Limited Slots)'" :tierNames="[
                             'Byte',
@@ -168,7 +180,8 @@
                             'Mega',
                             'Giga',
                             'Tera',
-                        ]" :args="['', '', '', '30 min', '60 min']"
+                            'Peta',
+                        ]" :args="['', '', '', '', '30 min', '60 min']"
                             :description="'A tech talk/workshop is an excellent way for sponsors to interact with our hackers and can be on any topic of your choice. Past workshops have covered a range of topics from cybersecurity to web development to machine learning. These will be done in person with the option to make it as interactive as desired. If companies need help choosing a topic for their workshop or event, they can connect with our Workshops team once they have committed to a tier.'" />
                         <ProspectusRow :categoryName="'Branded Mini Game'" :tierNames="[
                             'Byte',
@@ -176,7 +189,8 @@
                             'Mega',
                             'Giga',
                             'Tera',
-                        ]" :args="['', '', '', '', 'check-w']"
+                            'Peta',
+                        ]" :args="['', '', '', '', '', 'check-w']"
                             :description="'This is a great way to engage with our hackers in a fun, informal way over activity of choice (example: mini capture the flag, cup stacking, etc). A mini-challenge usually involves an activity like a game or a short event with prizes. We will work with you to arrange the logistics, and will also be sure to advertise and announce this mini-challenge during the event itself.'" />
                         <ProspectusBottomRow :categoryName="'Provide Additional Prize'" :tierNames="[
                             'Byte',
@@ -184,7 +198,8 @@
                             'Mega',
                             'Giga',
                             'Tera',
-                        ]" :args="['', '', '', '', 'check-w']"
+                            'Peta',
+                        ]" :args="['', '', '', '', '', 'check-w']"
                             :description="'Providing prizes is a powerful perk that can help companies reach out to their target hacker population, be it those interested in a specific field or those that have a specific skillset. This year, our Tera-level sponsor can provide 2 prizes to ensure they get as much outreach as possible and are successful in identifying talent at the hackathon.'" />
                         <ProspectusEmptyRow :categoryName="'Recruiting'" />
                         <ProspectusRow :categoryName="'Reserved Table'" :tierNames="[
@@ -193,9 +208,11 @@
                             'Mega',
                             'Giga',
                             'Tera',
+                            'Peta',
                         ]" :args="[
                             'check-b',
                             'check-b',
+                            'check-w',
                             'check-w',
                             'check-w',
                             'check-w',
@@ -207,28 +224,16 @@
                             'Mega',
                             'Giga',
                             'Tera',
+                            'Peta',
                         ]" :args="[
                             '',
                             'check-b',
                             'check-w',
                             'check-w',
                             'check-w',
+                            'check-w',
                         ]"
                             :description="'With this perk, sponsors will be provided with contact information that hackers provide to directly message with/reach out to after Bitcamp has occurred. This is information that we will provide to sponsors after the event.'" />
-                        <ProspectusRow :categoryName="'Access to Resumes'" :tierNames="[
-                            'Byte',
-                            'Kilo',
-                            'Mega',
-                            'Giga',
-                            'Tera',
-                        ]" :args="[
-                            '',
-                            '',
-                            'check-w',
-                            'check-w',
-                            'check-w',
-                        ]"
-                            :description="'With this perk, we provide a database of all of our registrants’ resumes to our sponsors following the event (before if we are able to do so logistically). This will [ideally be in a Google Drive format but can be changed due to certain company restrictions.'" />
                         <ProspectusRow :categoryName="'Recruiters Present'" :subText="'(active recruitment)'"
                             :tierNames="[
                             'Byte',
@@ -236,21 +241,56 @@
                             'Mega',
                             'Giga',
                             'Tera',
+                            'Peta',
                         ]" :args="[
                             '',
                             '',
                             'check-w',
                             'check-w',
                             'check-w',
+                            'check-w',
                         ]"
                             :description="'You are welcome to have recruiters and recruiting materials at your booth at Bitcamp, where you will be able to interact with all of our hackers. You may bring as many representatives as you’d like (we recommend 3-4). There will be a “Sponsorship Fair” during which hackers will be encouraged to visit your open booths.'" />
+                        <ProspectusRow :categoryName="'Pre-Event Sponsorship Fair'" :tierNames="[
+                            'Byte',
+                            'Kilo',
+                            'Mega',
+                            'Giga',
+                            'Tera',
+                            'Peta',
+                        ]" :args="[
+                            '',
+                            '',
+                            'check-w',
+                            'check-w',
+                            'check-w',
+                            'check-w',
+                        ]"
+                            :description="'You are welcome to have recruiters and rec   ruiting materials at your booth at Bitcamp, where you will be able to interact with all of our hackers. You may bring as many representatives as you’d like (we recommend 3-4). There will be a “Sponsorship Fair” during which hackers will be encouraged to visit your open booths.'" />
+                        <ProspectusRow :categoryName="'Access to Resumes'" :tierNames="[
+                            'Byte',
+                            'Kilo',
+                            'Mega',
+                            'Giga',
+                            'Tera',
+                            'Peta',
+                        ]" :args="[
+                            '',
+                            '',
+                            '',
+                            'check-w',
+                            'check-w',
+                            'check-w',
+                        ]"
+                            :description="'With this perk, we provide a database of all of our registrants’ resumes to our sponsors following the event (before if we are able to do so logistically). This will [ideally be in a Google Drive format but can be changed due to certain company restrictions.'" />
                         <ProspectusRow :categoryName="'Bootcamp Sponsorship Fair'" :tierNames="[
                             'Byte',
                             'Kilo',
                             'Mega',
                             'Giga',
                             'Tera',
-                        ]" :args="['', '', '', 'check-w', 'check-w']"
+                            'Peta',
+                        ]" :args="['', '', '', '', 'check-w', 'check-w']"
                             :description="'We’ve started a new tradition of a hype event before Bitcamp takes place, where hackers can come together, meet each other, and get a glimpse of what Bitcamp is and for the first time ever, we will be including a sponsorship fair as part of the event! This is a unique opportunity for you to be one of the first sponsors to interact with prospective hackers even before the hackathon takes place and gives you a chance to have a personalized interaction with hackers and begin recruiting early!'" />
                         <ProspectusRow :categoryName="'Recruitment Event Shoutout'" :subText="'(on social media)'"
                             :tierNames="[
@@ -259,7 +299,9 @@
                             'Mega',
                             'Giga',
                             'Tera',
+                            'Peta',
                         ]" :args="[
+                            '',
                             '',
                             '',
                             '',
@@ -274,7 +316,8 @@
                             'Mega',
                             'Giga',
                             'Tera',
-                        ]" :args="['', '', '', '', 'check-w']"
+                            'Peta',
+                        ]" :args="['', '', '', '', '', 'check-w']"
                             :description="'Around 2-3 days before the event itself, we will allow sponsors with this perk to email all of our registrants up to that point to encourage participants to keep an eye out for your company’s booth and activities during the event. The message would be sent by the Bitcamp Team on behalf of your organization/company, but we will leave the content of the email up to you! '" />
                         <ProspectusEmptyRow :categoryName="'Marketing'" />
                         <ProspectusRow :categoryName="'Logo on Shirt & Website'" :tierNames="[
@@ -283,9 +326,11 @@
                             'Mega',
                             'Giga',
                             'Tera',
+                            'Peta',
                         ]" :args="[
                             'check-b',
                             'check-b',
+                            'check-w',
                             'check-w',
                             'check-w',
                             'check-w',
@@ -297,9 +342,11 @@
                             'Mega',
                             'Giga',
                             'Tera',
+                            'Peta',
                         ]" :args="[
                             'check-b',
                             'check-b',
+                            'check-w',
                             'check-w',
                             'check-w',
                             'check-w',
@@ -311,9 +358,11 @@
                             'Mega',
                             'Giga',
                             'Tera',
+                            'Peta',
                         ]" :args="[
                             '',
                             'check-b',
+                            'check-w',
                             'check-w',
                             'check-w',
                             'check-w',
@@ -326,17 +375,19 @@
                             'Mega',
                             'Giga',
                             'Tera',
-                        ]" :args="['', '', '', '', 'check-w']"
+                            'Peta',
+                        ]" :args="['', '', '', '', '', 'check-w']"
                             :description="'Tera-level sponsors will be given special recognition in our marketing materials as a co-host. '" />
 
                         <ProspectusEmptyRow :categoryName="'Restricted Add-Ons'" />
-                        <ProspectusBottomRow :categoryName="'Podcast (by March 6th)'" :tierNames="[
+                        <ProspectusBottomRow :categoryName="'Custom Sponsor Marketing Video'" :tierNames="[
                             'Byte',
                             'Kilo',
                             'Mega',
                             'Giga',
                             'Tera',
-                        ]" :args="['', '', '', '$1,500', '$1,000']"
+                            'Peta',
+                        ]" :args="['', '', '', '2 min', '2 min', '4 min']"
                             :description="'This add-on is open to Giga and Tera sponsors, who will be given special recognition in our marketing materials as a co-host. '" />
 
 
@@ -346,7 +397,9 @@
                         <div class="Rtable-cell Rtable-cell--foot Rtable-cell-Mega"></div>
                         <div class="Rtable-cell Rtable-cell--foot Rtable-cell-Giga"></div>
                         <div class="Rtable-cell Rtable-cell--foot Rtable-cell-Tera"></div>
+                        <div class="Rtable-cell Rtable-cell--foot Rtable-cell-Peta"></div>
 
+                        <div class="Rtable-cell Rtable-cell-blank"></div>
                         <div class="Rtable-cell Rtable-cell-blank"></div>
                         <div class="Rtable-cell Rtable-cell-blank"></div>
                         <div class="Rtable-cell Rtable-cell-blank"></div>
@@ -364,11 +417,11 @@
                     <section class="ConnectSection">
                         <h2>Connect</h2>
                         <div>
-                            <img src="../assets/images/icons/globe.svg" alt="Bitcamp Homepage" />
+                            <img src="../assets/img/icons/globe.svg" alt="Bitcamp Homepage" />
                             <a href="https://bit.camp">https://bit.camp</a>
                         </div>
                         <div>
-                            <img src="../assets/images/icons/email.svg" alt="Email" />
+                            <img src="../assets/img/icons/email.svg" alt="Email" />
                             <a class="SponsorEmail" href="mailto:sponsorship@bit.camp">sponsorship@bit.camp</a>
                         </div>
                     </section>
@@ -525,7 +578,7 @@ hr.divider {
 }
 
 .SupportSection p {
-    font-size: 1.15rem;
+    font-size: 1.5rem;
 }
 
 h1,
@@ -578,7 +631,7 @@ h2 {
 
     .Rtable-grid {
         display: grid;
-        grid-template-columns: 2fr repeat(5, 1fr);
+        grid-template-columns: 2fr repeat(6, 1fr);
     }
 
     .Rtable-cell {
@@ -676,6 +729,7 @@ h2 {
 
     .Rtable-cell-blank {
         background-color: transparent;
+        border-color: hsla(227, 42%, 13%, 1);
     }
 
     .Rtable-category-cell {

@@ -1,17 +1,17 @@
 <template>
     <div class="Rtable-cell Rtable-category-cell Rtable-category-cell-bottom">
         <a class="tooltips direction" :title="categoryName" :description="description">
-            <img src="../assets/images/icons/question-mark-black.svg" alt="Question Mark" />
+            <img src="../assets/img/icons/question-mark-black.svg" alt="Question Mark" />
         </a>
         {{ categoryName }}
     </div>
 
     <div v-for="(arg, index) in args" :key="index" class="Rtable-cell" :class="'Rtable-cell-' + tierNames[index]">
         <p v-if="arg === 'check-b'">
-            <img src="../assets/images/icons/check-black.svg" alt="Checkmark" />
+            <img src="../assets/img/icons/check-black.svg" alt="Checkmark" />
         </p>
         <p v-else-if="arg === 'check-w'">
-            <img src="../assets/images/icons/check-white.svg" alt="Checkmark" />
+            <img src="../assets/img/icons/check-white.svg" alt="Checkmark" />
         </p>
         <p v-else>{{ arg }}</p>
     </div>
