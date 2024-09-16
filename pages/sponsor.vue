@@ -253,22 +253,6 @@
                             'check-w',
                         ]"
                             :description="'You are welcome to have recruiters and recruiting materials at your booth at Bitcamp, where you will be able to interact with all of our hackers. You may bring as many representatives as you’d like (we recommend 3-4). There will be a “Sponsorship Fair” during which hackers will be encouraged to visit your open booths.'" />
-                        <ProspectusRow :categoryName="'Pre-Event Sponsorship Fair'" :tierNames="[
-                            'Byte',
-                            'Kilo',
-                            'Mega',
-                            'Giga',
-                            'Tera',
-                            'Peta',
-                        ]" :args="[
-                            '',
-                            '',
-                            'check-w',
-                            'check-w',
-                            'check-w',
-                            'check-w',
-                        ]"
-                            :description="'You are welcome to have recruiters and rec   ruiting materials at your booth at Bitcamp, where you will be able to interact with all of our hackers. You may bring as many representatives as you’d like (we recommend 3-4). There will be a “Sponsorship Fair” during which hackers will be encouraged to visit your open booths.'" />
                         <ProspectusRow :categoryName="'Access to Resumes'" :tierNames="[
                             'Byte',
                             'Kilo',
