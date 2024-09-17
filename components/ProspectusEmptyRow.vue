@@ -1,6 +1,8 @@
 <template>
     <div class="Rtable-cell Rtable-category-cell title-row" style="color: var(--color-dark-text)">
-        {{ categoryName }}
+        <div class="Rtable-title-content">
+            {{ categoryName }}
+        </div>
     </div>
     <div class="Rtable-cell Rtable-cell-Byte title-row"></div>
     <div class="Rtable-cell Rtable-cell-Kilo title-row"></div>
@@ -23,5 +25,8 @@ export default {
 </script>
 
 <style scoped>
-.Rtable-cell {}
+.Rtable-title-content {
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
 </style>

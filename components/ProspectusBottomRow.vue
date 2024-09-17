@@ -6,7 +6,7 @@
         <span style="color: var(--color-dark-text);">{{ categoryName }}</span>
     </div>
 
-    <div v-for="(arg, index) in args" :key="index" class="Rtable-cell" :class="'Rtable-cell-' + tierNames[index]">
+    <div v-for="(arg, index) in   args  " :key="index" class="Rtable-cell" :class="'Rtable-cell-' + tierNames[index]">
         <p v-if="arg === 'check-b'">
             <img src="../assets/img/icons/check-black.svg" alt="Checkmark" />
         </p>
@@ -28,6 +28,11 @@
                     (&nbsp;<img style="width: 1.75rem;" src="../assets/img/icons/check-white.svg"
                         alt="Checkmark" />&nbsp;)
                 </span>
+            </span>
+            <span v-else-if="typeof arg === 'string' && arg.includes('$')">
+                {{ arg.split(' ')[0] }} {{ arg.split(' ')[1] }}
+                <br>
+                {{ arg.split(' ')[2] }}
             </span>
             <span v-else>
                 {{ arg }}

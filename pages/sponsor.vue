@@ -19,7 +19,7 @@
                         decade, Bitcamp has become a thriving hub of creativity and technical exploration, uniting over
                         <b>10,000</b> passionate hackers who have developed more than <b>1,350</b> innovative
                         projects. As we look back on a decade of breakthroughs, we're excited to continue pushing
-                        boundaries and fostering the next generation of tech leaders. We can' t wait to host over
+                        boundaries and fostering the next generation of tech leaders. We can't wait to host over
                         <b>1,000</b> attendees at Bitcamp 2025 <b> in person </b> at the University of Maryland
                         from <b>April 11th to 13th</b>.
                     </p>
@@ -730,6 +730,7 @@ h2 {
         -webkit-box-pack: left;
         -ms-flex-pack: left;
         justify-content: left;
+        width: 26rem;
     }
 
     .Rtable-category-cell-full {
@@ -746,12 +747,6 @@ h2 {
 
     .Rtable-category-cell-bottom {
         border-bottom-left-radius: var(--border-radius);
-    }
-
-    .Rtable-category-cell.title-row,
-    .Rtable-category-cell.first-row {
-        /* Extra padding to account for missing question mark image */
-        padding-left: 38px;
     }
 
     .Rtable-misc-category-cell-head {
@@ -889,6 +884,7 @@ h2 {
         .Rtable-category-cell {
             /* border-radius: 0; */
             border-right: 2px solid var(--color-border);
+            width: 20rem;
         }
     }
 
@@ -953,7 +949,9 @@ h2 {
         .Rtable-grid {
             overflow-x: auto;
         }
+    }
 
+    @media screen and (max-width: 1350px) {
         .tooltips.direction::after {
             //RIGHT
             content: attr(description);

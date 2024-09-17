@@ -5,7 +5,16 @@
             <img src="../assets/img/icons/question-mark-black.svg" alt="Question Mark" />
         </a>
         <div style="display: flex; flex-direction: column;">
-            <span style="color: var(--color-dark-text);">{{ categoryName }}</span>
+            <div v-if="!description">
+                <span style="color: var(--color-dark-text); margin-left: 1rem; margin-top: 0.5rem;">
+                    {{ categoryName }}
+                </span>
+            </div>
+            <div v-else>
+                <span style="color: var(--color-dark-text);">
+                    {{ categoryName }}
+                </span>
+            </div>
             <span v-if="subText" style="font-size: 1.25rem; color: var(--color-dark-text);">{{ subText }}</span>
         </div>
     </div>
@@ -60,6 +69,4 @@ export default {
 };
 </script>
 
-<style scoped>
-.Rtable-cell {}
-</style>
+<style scoped></style>
