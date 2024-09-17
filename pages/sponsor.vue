@@ -7,7 +7,9 @@
                         <img src="../assets/img/icons/go-back.svg" alt="Go Back" />
                         <span>Home</span>
                     </a>
-                    <h1>Bitcamp 2024!</h1>
+                    <h1>
+                        <strong class="SupportTitle"> help support </strong> Bitcamp 2024!
+                    </h1>
                     <br>
                     <p>Hello Potential Sponsor!</p>
                     <p>
@@ -53,7 +55,7 @@
                         reach us at <b><a href="mailto:sponsorship@bit.camp">sponsorship@bit.camp</a></b>.
                     </p>
                     <p>
-                        We hope to see you by the campfire!
+                        We hope to see you by the campfire! 🏕️
                     </p>
                     <p>Best,<br>The Bitcamp Team</p>
                     <hr class="divider" />
@@ -561,7 +563,7 @@ hr.divider {
 }
 
 .SupportTitle {
-    color: var(--color-light-text);
+    color: var(--color-dark-text);
 }
 
 .SupportSection p {
