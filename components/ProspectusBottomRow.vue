@@ -13,7 +13,26 @@
         <p v-else-if="arg === 'check-w'">
             <img src="../assets/img/icons/check-white.svg" alt="Checkmark" />
         </p>
-        <p v-else>{{ arg }}</p>
+        <p v-else>
+            <!-- Only for Custom Sponsor Marketing Video -->
+            <span v-if="typeof arg === 'string' && arg.includes('check')">
+                {{ arg.split('check')[0] }}
+                <br>
+                <span style="display: flex; justify-content: center;"
+                    v-if="typeof arg === 'string' && arg.includes('check-b')">
+                    (&nbsp;<img style="width: 1.75rem;" src="../assets/img/icons/check-black.svg"
+                        alt="Checkmark" />&nbsp;)
+                </span>
+                <span style="display: flex; justify-content: center;"
+                    v-if="typeof arg === 'string' && arg.includes('check-w')">
+                    (&nbsp;<img style="width: 1.75rem;" src="../assets/img/icons/check-white.svg"
+                        alt="Checkmark" />&nbsp;)
+                </span>
+            </span>
+            <span v-else>
+                {{ arg }}
+            </span>
+        </p>
     </div>
 </template>
 

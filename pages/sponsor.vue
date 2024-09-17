@@ -8,7 +8,7 @@
                         <span>Home</span>
                     </a>
                     <h1>
-                        <strong class="SupportTitle"> help support </strong> Bitcamp 2024!
+                        <strong class="SupportTitle"> help support </strong> Bitcamp 2025!
                     </h1>
                     <br>
                     <p>Hello Potential Sponsor!</p>
@@ -117,7 +117,7 @@
                             '$5,000',
                             '$7,000',
                             '$10,000',
-                            '$15,000',
+                            '$16,000',
                         ]" :header="'first-row Rtable-category-cell-full'" />
                         <ProspectusEmptyRow :categoryName="'General'" />
                         <ProspectusRow :categoryName="'Mentors at Event'" :tierNames="[
@@ -376,7 +376,7 @@
                             'Giga',
                             'Tera',
                             'Peta',
-                        ]" :args="['', '', '', '2 min ($350)', '2 min ($350)', '4 min ($350)']"
+                        ]" :args="['', '', '', '2 min ($350)', '2 min check-w', '4 min check-w']"
                             :description="'This add-on is open to Giga and Tera sponsors, who will be given special recognition in our marketing materials as a co-host. '" />
 
 
