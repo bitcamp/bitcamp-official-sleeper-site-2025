@@ -3,7 +3,7 @@
         <a class="tooltips direction" :title="categoryName" :description="description">
             <img src="../assets/img/icons/question-mark-black.svg" alt="Question Mark" />
         </a>
-        {{ categoryName }}
+        <span style="color: var(--color-dark-text);">{{ categoryName }}</span>
     </div>
 
     <div v-for="(arg, index) in args" :key="index" class="Rtable-cell" :class="'Rtable-cell-' + tierNames[index]">

@@ -3,11 +3,12 @@
         <a class="tooltips direction" :title="perk" :description="description">
             <img src="../assets/img/icons/question-mark-black.svg" alt="Question Mark" />
         </a>
-        <span v-if="bolded"><b>{{ perk }}</b></span>
-        <span v-else>{{ perk }}</span>
+        <span v-if="bolded" style="color:var(--color-dark-text)"><b>{{ perk }}</b></span>
+        <span v-else style="color: var(--color-dark-text);">{{ perk }}</span>
     </div>
 
-    <div class="Rtable-cell Rtable-cell-misc" :class="'Rtable-misc-cell-' + type">
+    <div class="Rtable-cell Rtable-cell-misc" :class="'Rtable-misc-cell-' + type"
+        style="color: var(--color-dark-text);">
         {{ price }}
     </div>
     <div class="Rtable-cell Rtable-cell-blank"></div>

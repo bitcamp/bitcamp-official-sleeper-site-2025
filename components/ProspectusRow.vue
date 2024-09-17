@@ -5,8 +5,8 @@
             <img src="../assets/img/icons/question-mark-black.svg" alt="Question Mark" />
         </a>
         <div style="display: flex; flex-direction: column;">
-            <span>{{ categoryName }}</span>
-            <span v-if="subText" style="font-size: 1.25rem;">{{ subText }}</span>
+            <span style="color: var(--color-dark-text);">{{ categoryName }}</span>
+            <span v-if="subText" style="font-size: 1.25rem; color: var(--color-dark-text);">{{ subText }}</span>
         </div>
     </div>
 
@@ -17,7 +17,14 @@
         <p v-else-if="arg === 'check-w'">
             <img src="../assets/img/icons/check-white.svg" alt="Checkmark" />
         </p>
-        <p v-else>{{ arg }}</p>
+        <p v-else>
+            <span v-if="index < 2" style="color: var(--color-dark-text);">
+                {{ arg }}
+            </span>
+            <span v-else>
+                {{ arg }}
+            </span>
+        </p>
     </div>
 </template>
 

@@ -1,5 +1,5 @@
 <template>
-    <div class="Rtable-cell Rtable-category-cell title-row">
+    <div class="Rtable-cell Rtable-category-cell title-row" style="color: var(--color-dark-text)">
         {{ categoryName }}
     </div>
     <div class="Rtable-cell Rtable-cell-Byte title-row"></div>
