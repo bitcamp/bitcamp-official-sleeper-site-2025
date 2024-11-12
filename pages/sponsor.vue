@@ -30,7 +30,7 @@
                             Development</b> track to introduce
                         hackers to the software development life cycle and a new <b>Cybersecurity</b> track to
                         facilitate discussions of web vulnerabilities. Our popular <b> Machine Learning </b> and <b>
-                            Quantum </b> tracks will be returning this year aw well.
+                            Quantum </b> tracks will be returning this year as well.
                         All
                         hackers are also challenged to learn new skills including project management and user-friendly
                         design. </p>
